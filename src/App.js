@@ -59,7 +59,7 @@ const disconnect = async () => {
 const tip = async () => {
   const provider = new ethers.BrowserProvider(window.ethereum)
   const signer = await provider.getSigner();
-  const address = "0x958c20A43F5206F186B0195cCB61Acb724b2EE1E"
+  const address = "0x7C8b82d1677a198CB14331BE465766FBbd836E7f"
   const amountInWei = ethers.parseEther(amount);
   const tx = signer.sendTransaction({to: address, value: amountInWei});
   console.log(tx)
